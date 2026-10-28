@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Health Bridge development version: privacy policy and terms of use in Vietnamese and English."><title>Privacy Policy / Chính sách quyền riêng tư | Health Bridge</title><style>:root{color-scheme:light; font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#16302d;background:#f5f8f7}
+body{margin:0;line-height:1.7}header,main,footer{max-width:900px;margin:auto;padding:24px}header{display:flex;flex-wrap:wrap;gap:20px;align-items:center}nav{display:flex;gap:20px;flex-wrap:wrap}a{color:#006c5a;text-underline-offset:3px}main{background:white;border:1px solid #dce7e2;border-radius:16px;margin:12px auto;padding:32px;overflow-wrap:anywhere}h1,h2,h3{line-height:1.3}h1{font-size:2rem}h2{margin-top:2.5rem;padding-top:16px;border-top:1px solid #dce7e2}h3{margin-top:2rem}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{padding:10px;border:1px solid #dce7e2;text-align:left;vertical-align:top}code{overflow-wrap:anywhere}footer{font-size:.9rem;color:#4b635e}@media(max-width:960px){main{margin:10px 12px;padding:20px}header,footer{padding:20px}h1{font-size:1.6rem}}</style></head>
+<body><header><strong><a href="./">Health Bridge</a></strong><nav aria-label="Documents"><a href="privacy.html">Privacy / Quyền riêng tư</a><a href="terms.html">Terms / Điều khoản</a></nav></header>
+<main><h1 id="health-bridge-chinh-sach-quyen-rieng-tu-privacy-policy">Health Bridge — Chính sách quyền riêng tư / Privacy Policy</h1>
+<p><strong>Trạng thái / Status:</strong> Tài liệu cho bản phát triển / Development-version document<br />
+<strong>Cập nhật / Last updated:</strong> 28/10/2026 / 28 October 2026<br />
+<strong>Nhà phát triển / Developer:</strong> yunhans<br />
+<strong>Liên hệ / Contact:</strong> <a href="mailto:yungchenhanji@gmail.com">yungchenhanji@gmail.com</a><br />
+<strong>GitHub:</strong> <a href="https://github.com/yunjedi">yunjedi</a><br />
+<strong>Mã ứng dụng dự kiến / Intended application ID:</strong> <code>com.yunhans.healthbridge</code></p>
+<h2 id="tieng-viet">Tiếng Việt</h2>
+<h3 id="pham-vi-va-trang-thai-ung-dung">1. Phạm vi và trạng thái ứng dụng</h3>
+<p>Chính sách này giải thích cách Health Bridge do yunhans phát triển xử lý dữ liệu cá nhân. Mục tiêu của ứng dụng là chuyển một chiều dữ liệu do người dùng cho phép từ HUAWEI Health sang Android Health Connect trên thiết bị của người dùng.</p>
+<p>Health Bridge hiện là bản phát triển. Kết nối tài khoản Huawei và việc đọc dữ liệu Huawei chưa được triển khai hoặc kích hoạt. Bản hiện tại có bộ chuyển đổi ghi bước chân và nhịp tim vào Health Connect, nhưng chưa có luồng đồng bộ dữ liệu Huawei thật. SpO₂, cân nặng và chiều cao là các loại dữ liệu dự kiến bổ sung, chưa được hỗ trợ trong bản hiện tại. Việc hỗ trợ từng loại dữ liệu phụ thuộc vào triển khai kỹ thuật, quyền Huawei phê duyệt và quyền người dùng cấp.</p>
+<p>Chúng tôi sẽ cập nhật chính sách và thông tin trong ứng dụng trước khi kích hoạt cách xử lý dữ liệu mới. Tài liệu này không xác nhận Health Bridge đã được Huawei hoặc Google phê duyệt.</p>
+<h3 id="du-lieu-va-muc-ich-su-dung">2. Dữ liệu và mục đích sử dụng</h3>
+<p>Trong bản hiện tại, ứng dụng không đọc dữ liệu sức khỏe từ Huawei. Ứng dụng lưu cục bộ thông tin kỹ thuật phục vụ đồng bộ: mốc thời gian đã xử lý, định danh và phiên bản bản ghi để tránh trùng lặp, trạng thái đồng bộ, số bản ghi đã ghi và thông báo lỗi. Cơ sở dữ liệu đồng bộ hiện tại không dùng để lưu giá trị sức khỏe thô.</p>
+<p>Khi tích hợp Huawei được kích hoạt trong một phiên bản tương lai, phạm vi dự kiến gồm:</p>
+<table>
+<thead>
+<tr>
+<th>Loại dữ liệu</th>
+<th>Mục đích</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bước chân và khoảng thời gian tương ứng</td>
+<td>Chuyển dữ liệu vận động sang Health Connect</td>
+</tr>
+<tr>
+<td>Nhịp tim và thời điểm đo</td>
+<td>Chuyển bản ghi nhịp tim sang Health Connect</td>
+</tr>
+<tr>
+<td>Độ bão hòa oxy trong máu (SpO₂) và thời điểm đo</td>
+<td>Chuyển bản ghi SpO₂ sang Health Connect</td>
+</tr>
+<tr>
+<td>Cân nặng, chiều cao và thời điểm ghi nhận</td>
+<td>Chuyển số đo cơ thể sang Health Connect</td>
+</tr>
+<tr>
+<td>Định danh kỹ thuật của nguồn/bản ghi, phiên bản, múi giờ và thông tin thời gian cần thiết</td>
+<td>Gắn dữ liệu với đúng nguồn, giữ đúng thời gian và hạn chế bản ghi trùng</td>
+</tr>
+</tbody>
+</table>
+<p>Đây là danh sách tính năng dự kiến, không phải danh sách quyền hiện đã được cấp. Chỉ loại dữ liệu đã được hỗ trợ và được cả Huawei lẫn người dùng cho phép mới được xử lý. Dữ liệu trước thời điểm cấp quyền chỉ được truy cập nếu quyền đọc lịch sử phù hợp đã được cấp.</p>
+<p>Chúng tôi không sử dụng dữ liệu sức khỏe cho quảng cáo, bán dữ liệu, chấm điểm tín dụng, quyết định bảo hiểm hoặc huấn luyện mô hình AI. Bản hiện tại không tích hợp SDK quảng cáo hoặc phân tích hành vi.</p>
+<h3 id="quyen-truy-cap-va-lua-chon-cua-ban">3. Quyền truy cập và lựa chọn của bạn</h3>
+<p>Quyền Huawei và quyền Health Connect là hai nhóm quyền riêng biệt. Quyền đọc Huawei cho phép lấy dữ liệu nguồn; quyền ghi Health Connect cho phép lưu dữ liệu được chuyển trên thiết bị Android. Bản hiện tại khai báo quyền ghi bước chân và nhịp tim vào Health Connect, không yêu cầu đọc dữ liệu của các ứng dụng khác từ Health Connect.</p>
+<p>Bạn có thể từ chối hoặc thu hồi từng quyền qua các công cụ quản lý quyền của Huawei và Health Connect. Khi quyền cần thiết không còn hiệu lực, chức năng phụ thuộc vào quyền đó sẽ không hoạt động. Thu hồi quyền không tự động xóa các bản ghi đã được chuyển trước đó.</p>
+<h3 id="noi-xu-ly-va-luu-tru-du-lieu">4. Nơi xử lý và lưu trữ dữ liệu</h3>
+<p>Bản hiện tại không có backend của Health Bridge và không gửi dữ liệu sức khỏe đến máy chủ do chúng tôi vận hành. Thông tin kỹ thuật đồng bộ được lưu trong bộ nhớ riêng của ứng dụng trên thiết bị. Cấu hình hiện tại tắt sao lưu dữ liệu ứng dụng bằng cơ chế sao lưu Android.</p>
+<p>Các bản ghi đã ghi vào Health Connect được quản lý trong Health Connect. Những ứng dụng khác có thể truy cập chúng nếu bạn cấp quyền cho các ứng dụng đó. Việc sử dụng dữ liệu bởi Huawei, Google, nhà sản xuất thiết bị hoặc ứng dụng khác chịu sự điều chỉnh của chính sách và lựa chọn quyền riêng của các bên đó.</p>
+<p>Kiến trúc dự kiến sử dụng Huawei cloud API và một backend OAuth tối thiểu để xử lý cấp quyền, đổi mã và làm mới token. Backend này chưa tồn tại. Trước khi triển khai, chúng tôi sẽ công bố trong chính sách cập nhật nơi lưu trữ, nhà cung cấp hạ tầng, dữ liệu tài khoản và token được xử lý, thời hạn lưu giữ, cách ngắt kết nối/xóa dữ liệu và thông tin xử lý xuyên biên giới có liên quan. Không nên hiểu mô tả dự kiến này là một dịch vụ backend hiện đang hoạt động.</p>
+<h3 id="chia-se-du-lieu">5. Chia sẻ dữ liệu</h3>
+<p>Luồng chia sẻ dự kiến là lấy dữ liệu đã được cho phép từ Huawei và ghi vào Health Connect theo yêu cầu của bạn. Chúng tôi không bán hoặc cho thuê dữ liệu sức khỏe và không chia sẻ dữ liệu đó cho đơn vị quảng cáo.</p>
+<p>Nếu bạn liên hệ hỗ trợ qua email, nhà cung cấp email sẽ xử lý thư theo dịch vụ của họ. Không gửi mật khẩu, token đăng nhập hoặc hồ sơ sức khỏe không cần thiết qua email. Trang tài liệu nếu được lưu trên GitHub Pages sẽ do GitHub cung cấp; việc truy cập trang chịu sự điều chỉnh của <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Chính sách quyền riêng tư GitHub</a>. Không đưa dữ liệu sức khỏe lên issue hoặc repository công khai.</p>
+<h3 id="luu-giu-va-xoa-du-lieu">6. Lưu giữ và xóa dữ liệu</h3>
+<p>Thông tin kỹ thuật đồng bộ được giữ cục bộ để phục vụ hoạt động đồng bộ cho đến khi bạn xóa dữ liệu ứng dụng hoặc gỡ ứng dụng. Không có nút xóa dữ liệu riêng trong bản hiện tại. Xóa dữ liệu ứng dụng hoặc gỡ ứng dụng không mặc nhiên xóa các bản ghi trong Health Connect hoặc dữ liệu nguồn Huawei.</p>
+<p>Để xóa bản ghi đã xuất, sử dụng chức năng quản lý dữ liệu trong Health Connect, chọn dữ liệu do Health Bridge ghi và phạm vi cần xóa. Để quản lý dữ liệu nguồn hoặc quyền Huawei, sử dụng công cụ tương ứng của Huawei. Bản hiện tại chưa tự động truyền thao tác xóa từ nguồn Huawei sang Health Connect. Nếu chức năng đồng bộ được bật trong tương lai, hãy ngừng đồng bộ hoặc thu hồi quyền trước khi xóa để tránh dữ liệu được nhập lại.</p>
+<p>Nếu gửi yêu cầu hỗ trợ, chúng tôi sử dụng nội dung thư và địa chỉ email để xử lý yêu cầu. Bạn có thể đề nghị xóa thư trao đổi; một số nội dung có thể cần được giữ khi có nghĩa vụ pháp lý áp dụng.</p>
+<h3 id="bao-mat">7. Bảo mật</h3>
+<p>Chúng tôi dựa vào cơ chế bảo vệ bộ nhớ riêng của ứng dụng và quyền truy cập của Android, đồng thời hạn chế dữ liệu được lưu. Không có phương pháp lưu trữ hoặc truyền dữ liệu nào bảo đảm an toàn tuyệt đối. Bạn cần bảo vệ thiết bị và tài khoản, cập nhật phần mềm và chỉ cài bản ứng dụng từ nguồn bạn tin cậy.</p>
+<h3 id="quyen-rieng-tu-va-lien-he">8. Quyền riêng tư và liên hệ</h3>
+<p>Bạn có thể liên hệ để hỏi về dữ liệu chúng tôi xử lý, yêu cầu sửa hoặc xóa dữ liệu do chúng tôi kiểm soát, hoặc thực hiện các quyền khác theo pháp luật áp dụng. Chúng tôi có thể cần xác minh yêu cầu một cách phù hợp. Chúng tôi không thể trực tiếp sửa hoặc xóa dữ liệu do Huawei, Health Connect hoặc ứng dụng khác kiểm soát; trong trường hợp đó, chúng tôi sẽ hướng dẫn công cụ liên quan khi có thể.</p>
+<p>Liên hệ: <strong>yunhans — <a href="mailto:yungchenhanji@gmail.com">yungchenhanji@gmail.com</a></strong>.</p>
+<h3 id="tre-em-va-thay-oi-chinh-sach">9. Trẻ em và thay đổi chính sách</h3>
+<p>Health Bridge không được thiết kế riêng cho trẻ em. Nếu bạn chưa đủ tuổi tự đồng ý theo pháp luật áp dụng, hãy nhờ cha mẹ hoặc người giám hộ xem xét trước khi sử dụng.</p>
+<p>Chính sách có thể được cập nhật khi tính năng hoặc cách xử lý dữ liệu thay đổi. Ngày cập nhật được ghi ở đầu tài liệu. Thay đổi quan trọng sẽ được thông báo trong ứng dụng hoặc tại nơi công bố chính sách; quyền bổ sung sẽ được xin trước khi truy cập loại dữ liệu mới.</p>
+<h2 id="english">English</h2>
+<h3 id="scope-and-development-status">1. Scope and development status</h3>
+<p>This policy explains how Health Bridge, developed by yunhans, handles personal data. The app is intended to transfer user-authorized data in one direction from HUAWEI Health to Android Health Connect on the user's device.</p>
+<p>Health Bridge is currently a development build. Huawei account connection and access to Huawei data have not been implemented or enabled. The current build includes a Health Connect adapter for writing steps and heart rate, but has no working synchronization flow using real Huawei data. SpO₂, weight, and height are planned additions and are not supported in the current build. Support for each data type depends on implementation, Huawei approval, and user authorization.</p>
+<p>We will update this policy and the app's disclosures before enabling new data processing. This document does not represent approval of Health Bridge by Huawei or Google.</p>
+<h3 id="data-and-purposes">2. Data and purposes</h3>
+<p>The current build does not read health data from Huawei. It stores local synchronization metadata: processed time checkpoints, record identifiers and versions for duplicate prevention, synchronization status, written-record counts, and error messages. The current synchronization database is not used to store raw health measurements.</p>
+<p>When Huawei integration is enabled in a future version, the intended scope is:</p>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steps and their time intervals</td>
+<td>Transfer activity records to Health Connect</td>
+</tr>
+<tr>
+<td>Heart rate and measurement times</td>
+<td>Transfer heart-rate records to Health Connect</td>
+</tr>
+<tr>
+<td>Blood oxygen saturation (SpO₂) and measurement times</td>
+<td>Transfer oxygen-saturation records to Health Connect</td>
+</tr>
+<tr>
+<td>Weight, height, and recording times</td>
+<td>Transfer body measurements to Health Connect</td>
+</tr>
+<tr>
+<td>Necessary technical source/record identifiers, versions, time zones, and timing information</td>
+<td>Attribute records to the correct source, preserve timing, and limit duplicates</td>
+</tr>
+</tbody>
+</table>
+<p>This describes planned capabilities, not permissions already granted. Only supported data types authorized by both Huawei and the user will be processed. Data from before authorization will be accessed only if the relevant historical-data permission has been granted.</p>
+<p>We do not use health data for advertising, data sales, credit scoring, insurance decisions, or AI model training. The current build contains no advertising or behavioral analytics SDKs.</p>
+<h3 id="permissions-and-your-choices">3. Permissions and your choices</h3>
+<p>Huawei permissions and Health Connect permissions are separate. Huawei read access permits retrieval of source data; Health Connect write access permits storage of transferred records on the Android device. The current build declares Health Connect write permissions for steps and heart rate and does not request access to read other apps' data from Health Connect.</p>
+<p>You can deny or revoke individual permissions through Huawei and Health Connect controls. Functions requiring a permission will be unavailable when that permission is no longer effective. Revoking permission does not automatically delete previously transferred records.</p>
+<h3 id="processing-and-storage-locations">4. Processing and storage locations</h3>
+<p>The current build has no Health Bridge backend and does not send health data to servers operated by us. Synchronization metadata is stored in the app's private storage on the device. The current configuration disables Android app-data backup.</p>
+<p>Records written to Health Connect are managed within Health Connect. Other apps may access those records if you authorize them. Processing by Huawei, Google, device manufacturers, or other apps is governed by their own policies and your permissions for those services.</p>
+<p>The planned architecture uses Huawei cloud APIs and a minimal OAuth backend for authorization, code exchange, and token refresh. That backend does not yet exist. Before deployment, an updated policy will disclose hosting locations and providers, account and token data processed, retention periods, disconnection/deletion procedures, and relevant cross-border processing information. This planned architecture must not be understood as an existing backend service.</p>
+<h3 id="sharing">5. Sharing</h3>
+<p>The intended transfer is from Huawei to Health Connect at your request and within your permissions. We do not sell or rent health data or share it with advertisers.</p>
+<p>If you contact support by email, the email provider processes the message as part of its service. Do not email passwords, access tokens, or unnecessary health records. If these documents are hosted on GitHub Pages, GitHub provides the hosting service, and visits are subject to the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. Do not post health information in public issues or repositories.</p>
+<h3 id="retention-and-deletion">6. Retention and deletion</h3>
+<p>Synchronization metadata remains on the device for synchronization purposes until you clear the app's storage or uninstall it. The current build has no dedicated in-app data deletion button. Clearing app storage or uninstalling does not automatically delete Health Connect records or Huawei source data.</p>
+<p>Use Health Connect's data-management controls to delete records written by Health Bridge for the desired time range. Use Huawei's controls to manage source data and Huawei authorization. The current build does not automatically propagate Huawei source deletions to Health Connect. If synchronization is enabled in a future version, stop synchronization or revoke access before deletion to prevent records from being imported again.</p>
+<p>If you request support, we use your email address and message to address your request. You may ask us to delete correspondence; some information may need to be retained where applicable legal obligations require it.</p>
+<h3 id="security">7. Security</h3>
+<p>We rely on Android's app-private storage and permission controls and limit stored data. No storage or transmission method provides absolute security. Protect your device and accounts, keep software updated, and install the app only from sources you trust.</p>
+<h3 id="privacy-requests-and-contact">8. Privacy requests and contact</h3>
+<p>You may contact us to ask about data we process, request correction or deletion of data under our control, or exercise other rights under applicable law. We may need to verify a request appropriately. We cannot directly change or delete data controlled by Huawei, Health Connect, or other apps; where possible, we will direct you to the relevant controls.</p>
+<p>Contact: <strong>yunhans — <a href="mailto:yungchenhanji@gmail.com">yungchenhanji@gmail.com</a></strong>.</p>
+<h3 id="children-and-policy-updates">9. Children and policy updates</h3>
+<p>Health Bridge is not designed specifically for children. If you are below the age at which you can consent independently under applicable law, ask a parent or guardian to review the service before use.</p>
+<p>We may update this policy when features or data practices change. The update date appears at the top. Material changes will be communicated in the app or where this policy is published, and additional permissions will be requested before new data types are accessed.</p>
+</main><footer>yunhans · <a href="mailto:yungchenhanji@gmail.com">yungchenhanji@gmail.com</a> · <a href="https://github.com/yunjedi/health-bridge-legal">Document source</a></footer></body></html>
